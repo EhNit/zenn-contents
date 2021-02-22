@@ -1,0 +1,9 @@
+@startuml
+class 食べる人 {
+    double 空腹率
+}
+
+
+食べる人 <-- 室内系な人
+食べる人 <-- 野外系な人
+@enduml

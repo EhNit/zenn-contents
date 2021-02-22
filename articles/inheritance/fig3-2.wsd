@@ -1,0 +1,14 @@
+@startuml
+
+class 料理する人 {
+    void ご飯を作る()
+}
+
+abstract class 食べる人 {
+    double 空腹率
+    double 空腹率取得()
+}
+
+食べる人 -- 料理する人
+
+@enduml
