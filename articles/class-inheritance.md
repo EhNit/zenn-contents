@@ -30,7 +30,7 @@ published: false # 公開設定（falseにすると下書き）
 * 「料理する人」は定期的に「食べる人」は空腹具合を聞く
 * 「食べる人」のお腹空き力には個人によりばらつきがある
 
-![alt](inheritance\fig1-2.png)
+![](https://storage.googleapis.com/zenn-user-upload/oo42qrpl2lyqqhrkmeqtfxnzg7vl)
 
 :::details plantuml
 ```plantuml
@@ -63,7 +63,7 @@ interface お腹の空き具合 {
 赤枠の部分で通常クラスと抽象クラスの使い分けを考え, 緑枠の部分で継承とインターフェースの使い分けを考えます
 
 ## 通常クラスと抽象クラスの使い分け
-![alt](inheritance\fig2.png)
+![](https://storage.googleapis.com/zenn-user-upload/vgj9eaui4ilcg7il10boppml5gjy)
 
 赤枠部分について考えてみます
 
@@ -102,7 +102,7 @@ namespace Hungry
 
 ※当然通常クラスでの設計でも「食べる人」にabstractを付けないだけで同様の構成とできます。しかし、その構造はabstractを実装していない言語でabstractの実現したいことを行っていると取れるため、今回はこのような比較となっています
 
-![alt](inheritance\fig2-2.png)
+![](https://storage.googleapis.com/zenn-user-upload/mixd359hxa9k1hr208lmrmermzsa)
 
 コードは次のようになります
 
@@ -173,17 +173,17 @@ void loop(){
 
 よって
 
-![alt](inheritance\fig2.png)
+![](https://storage.googleapis.com/zenn-user-upload/vgj9eaui4ilcg7il10boppml5gjy)
 
 と
 
-![alt](inheritance\fig2-2.png)
+![](https://storage.googleapis.com/zenn-user-upload/mixd359hxa9k1hr208lmrmermzsa)
 
 では、後者の方が適切ではなかろうか、と考えられました
 
 
 ## インターフェースとの使い分け
-![alt](inheritance\fig3.png)
+![](https://storage.googleapis.com/zenn-user-upload/093tb43qlp615bcluhjgghdtknhi)
 
 次に緑枠の部分を見ていきます
 
@@ -227,7 +227,7 @@ namespace Hungry_Interface
 ```
 
 ### 継承との比較
-![alt](inheritance\fig3-2.png)
+![](https://storage.googleapis.com/zenn-user-upload/d631ribai3ajfnbs956bdj26t57f)
 
 継承方式の際には、全てを「食べる人」が所持しているとします
 ※1: 継承元が抽象であってもなくても変わらないため抽象クラスで考えます
@@ -276,9 +276,9 @@ namespace Hungry_Inheritance
 この場合各パターンは次のような関係となります
 ※コードは長くなるため割愛します
 
-![alt](inheritance\fig4.png)
+![](https://storage.googleapis.com/zenn-user-upload/kv6ktqdpfsmdlue6mybae48efbij)
 
-![alt](inheritance\fig4-2.png)
+![](https://storage.googleapis.com/zenn-user-upload/879jj0ij74xb8pv396p21i795vv6)
 
 
 さて後者の図でのだめ部分を出すことで前者の正当化をします。クラスを静的に見ると食べる人へのアクセスをする際に空腹率と渇き率の両方を取得可能になります
