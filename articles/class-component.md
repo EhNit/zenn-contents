@@ -47,7 +47,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![alt](component/fig1-1.svg)
+![](https://storage.googleapis.com/zenn-user-upload/mtdwvh2hfql3v8wjehcjevpztw8l)
 
 :::details plantuml
 ```plantuml
@@ -66,7 +66,7 @@ class 鍋で料理する人 {
 料理する人 <-- 鍋で料理する人
 ```
 :::
-![alt](component/fig1-2.svg)
+![](https://storage.googleapis.com/zenn-user-upload/nmqrpb8vi3r9pu25nq8o70v2egbn)
 
 
 :::details plantuml
@@ -83,7 +83,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![alt](component/fig1-3.svg)
+![](https://storage.googleapis.com/zenn-user-upload/mkgv5m77yevxdlr9emdtpbr7vt0c)
 
 ## パターン1と2の比較
 
@@ -124,7 +124,7 @@ interface お腹の空き具合 {
 
 ```
 :::
-![alt](component/fig2.svg)
+![](https://storage.googleapis.com/zenn-user-upload/yoarex3ugvani9zkapa2132f1zzx)
 
 ### 自クラスから見た場合
 
@@ -151,7 +151,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![alt](component/fig3-1.svg)
+![](https://storage.googleapis.com/zenn-user-upload/znhv9k5xdkgnodnti2odjgbdcm0d)
 
 * パターン2
 
@@ -173,7 +173,7 @@ class 鍋で料理する人 {
 料理する人 <-- 鍋で料理する人
 ```
 :::
-![alt](component/fig3-2-1.svg)
+![](https://storage.googleapis.com/zenn-user-upload/16db16q77ihe7rc7xbpn3f4yvbh9)
 
 :::details plantuml
 ```plantuml
@@ -192,7 +192,7 @@ class 鍋で料理する人 {
 料理する人 <-- 鍋で料理する人
 ```
 :::
-![alt](component/fig3-2-2.svg)
+![](https://storage.googleapis.com/zenn-user-upload/uqa1d89jcjdmpeo3ehx8gqjl9hb2)
 
 さてどうでしょうか。まず各パターンの情報の持ち方の差を見てみましょう
 
@@ -223,9 +223,9 @@ class 鍋で料理する人 {
 
 
 ## パターン1と3の比較
-![alt](component/fig1-1.svg)
+![](https://storage.googleapis.com/zenn-user-upload/mtdwvh2hfql3v8wjehcjevpztw8l)
 
-![alt](component/fig1-3.svg)
+![](https://storage.googleapis.com/zenn-user-upload/mkgv5m77yevxdlr9emdtpbr7vt0c)
 
 次にパターン1と3を比較します。こちらはパターン2と異なり耐久力を追加したとしても差分がありません
 
@@ -303,7 +303,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![alt](component/fig4-1.svg)
+![](https://storage.googleapis.com/zenn-user-upload/bb02n8z8fyjfjgw94rse0rmfkaex)
 
 
 :::details plantuml
@@ -322,7 +322,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![alt](component/fig4-2.svg)
+![](https://storage.googleapis.com/zenn-user-upload/efdxvmhok47s7hskg6tjdmkp70e6)
 
 #### 実装時を考える
 さてこの2つの設計を制御する場合を考えてみましょう。新たに追加した「「調理器具」は使用すると耐久力が減り、0になると使えないため「調理器具」を変更する」をどのように実現すればよいでしょうか
@@ -426,7 +426,7 @@ void main()
 よってパターン1のほうが適切である、ということが分かりました
 
 ### まとめ
-![alt](component/summary.jpg)
+![](https://storage.googleapis.com/zenn-user-upload/decsf468bjw4fbwm985n7jsu08qs)
 
 (クラス図じゃないか)
 
