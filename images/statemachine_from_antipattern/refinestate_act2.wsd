@@ -1,0 +1,26 @@
+@startuml
+
+skin rose
+start
+
+partition 高速移動処理 {
+  if (<font color="red">壁</font>状態) then (非壁接触状態)
+    if (キー入力) then (yes)
+      :高速移動;
+      :<font color="red">移動</font>状態を高速移動中に変更;
+    else (no)
+      :<font color="red">移動</font>状態を非高速移動中に変更;
+    endif
+  else
+  endif
+}
+
+partition 壁判定 {
+  if (接触対象) then (壁)
+    :<font color="red">壁</font>状態を壁接触中に変更;
+  else (壁ではない/触れていない)
+    :<font color="red">壁</font>状態を壁非接触中に変更;
+  endif
+}
+end
+@enduml

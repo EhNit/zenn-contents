@@ -1,0 +1,10 @@
+@startuml
+skin rose
+start
+
+:起床;
+#Mistyrose:空腹状態の確認;
+:出発準備;
+
+end
+@enduml

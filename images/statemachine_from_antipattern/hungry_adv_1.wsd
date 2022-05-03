@@ -1,0 +1,19 @@
+@startuml
+skin rose
+start
+
+if (お腹具合状態) then (とてもすいている)
+    #Mistyrose:スーパーへ行き食材を購入する;
+    #Mistyrose:調理する;
+    :ご飯を食べる;
+    :状態をお腹がすいていないに変更;
+else if(お腹具合状態) then (すこしすいている)
+    #Mistyrose:コンビニへ行きおやつを購入する;
+    :おやつを食べる;
+    :状態をお腹がすいていないに変更;
+else (お腹がすいていない)
+    :なにもしない;
+endif
+
+end
+@enduml
