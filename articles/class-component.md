@@ -54,7 +54,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/mtdwvh2hfql3v8wjehcjevpztw8l)
+![](/images/component/fig1-1.png)
 
 :::details plantuml
 ```plantuml
@@ -73,7 +73,7 @@ class 鍋で料理する人 {
 料理する人 <-- 鍋で料理する人
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/nmqrpb8vi3r9pu25nq8o70v2egbn)
+![](/images/component/fig1-2.png)
 
 
 :::details plantuml
@@ -90,7 +90,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/mkgv5m77yevxdlr9emdtpbr7vt0c)
+![](/images/component/fig1-3.png)
 
 ## パターン1と2の比較
 
@@ -131,7 +131,7 @@ interface お腹の空き具合 {
 
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/yoarex3ugvani9zkapa2132f1zzx)
+![](/images/component/fig2.png)
 
 ### 自クラスから見た場合
 
@@ -158,7 +158,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/znhv9k5xdkgnodnti2odjgbdcm0d)
+![](/images/component/fig3-1.png)
 
 * パターン2
 
@@ -180,7 +180,7 @@ class 鍋で料理する人 {
 料理する人 <-- 鍋で料理する人
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/16db16q77ihe7rc7xbpn3f4yvbh9)
+![](/images/component/fig3-2-1.png)
 
 :::details plantuml
 ```plantuml
@@ -199,7 +199,7 @@ class 鍋で料理する人 {
 料理する人 <-- 鍋で料理する人
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/uqa1d89jcjdmpeo3ehx8gqjl9hb2)
+![](/images/component/fig3-2-2.png)
 
 さてどうでしょうか。まず各パターンの情報の持ち方の差を見てみましょう
 
@@ -230,9 +230,9 @@ class 鍋で料理する人 {
 
 
 ## パターン1と3の比較
-![](https://storage.googleapis.com/zenn-user-upload/mtdwvh2hfql3v8wjehcjevpztw8l)
+![](/images/component/fig1-1.png)
 
-![](https://storage.googleapis.com/zenn-user-upload/mkgv5m77yevxdlr9emdtpbr7vt0c)
+![](/images/component/fig1-3.png)
 
 次にパターン1と3を比較します。こちらはパターン2と異なり耐久力を追加したとしても差分がありません
 
@@ -310,7 +310,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/bb02n8z8fyjfjgw94rse0rmfkaex)
+![](/images/component/fig4-1.png)
 
 
 :::details plantuml
@@ -329,7 +329,7 @@ abstract class 調理器具 {
 調理器具 <-- 鍋
 ```
 :::
-![](https://storage.googleapis.com/zenn-user-upload/efdxvmhok47s7hskg6tjdmkp70e6)
+![](/images/component/fig4-2.png)
 
 #### 実装時を考える
 さてこの2つの設計を制御する場合を考えてみましょう。新たに追加した「「調理器具」は使用すると耐久力が減り、0になると使えないため「調理器具」を変更する」をどのように実現すればよいでしょうか
@@ -433,7 +433,7 @@ void main()
 よってパターン1のほうが適切である、ということが分かりました
 
 ### まとめ
-![](https://storage.googleapis.com/zenn-user-upload/decsf468bjw4fbwm985n7jsu08qs)
+![](/images/component/summary.jpg)
 
 (クラス図じゃないか)
 
