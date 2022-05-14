@@ -29,6 +29,7 @@ published: true # 公開設定（falseにすると下書き）
 :::details 動画
 @[youtube](wGR9a0r_dMU)
 
+[niconico](https://www.nicovideo.jp/watch/sm40463194)
 :::
 
 ## こんなシステムを作りたかった
